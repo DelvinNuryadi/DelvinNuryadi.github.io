@@ -79,35 +79,55 @@ window.CONFIG = {
       textColor: '#fff',
       pinned: true
     },
+
     {
-      category: 'Communication',
-      name: 'Telegram',
-      icon: 'telegram',
-      url: 'http://t.me',
-      normalisedURL: 't.me',
+      category: 'Other',
+      name: 'Translate',
+      icon: 'translate',
+      url: 'https://translate.google.com',
+      normalisedURL: 'translate.google.com',
       triggers: [
-        
-        'tm',
-        'tg',
-        'teleg',
-        'telega',
-        'telegram'
+        't',
+        'translate'
       ],
-      key: 'KeyM',
+      key: 'KeyT',
       commands: {
-        go: {
-          template: '{@}/{$}'
+        search: {
+          template: '{@}/?text={$}',
+          description: 'translate text'
         }
       },
       bgColor: {
         type: 'gradient',
-        gradientType: 'radial',
-        colors: ['#29aaed', '#25a4e2'],
-        stops: [40, 100]
+        gradientType: 'linear',
+        angle: 45,
+        colors: ['#508bed', '#4654b4']
       },
       textColor: '#fff',
       pinned: true
     },
+
+    {
+      category: 'Social',
+      name: 'Discord',
+      icon: 'discord',
+      key: 'KeyD',
+      triggers: [
+        'd',
+        'dis',
+        'discord'
+      ],
+      url: 'https://discord.com/app',
+      normalisedURL: 'discord.com',
+      bgColor: {
+        type: 'solid',
+        color: '#5460e6'
+      },
+      textColor: '#fff',
+      pinned: true
+    },
+
+    
     {
       category: 'Communication',
       name: 'WhatsApp',
@@ -130,6 +150,67 @@ window.CONFIG = {
       textColor: '#fff',
       pinned: true
     },
+
+    {
+      category: 'Social',
+      name: 'Instagram',
+      triggers: [
+        'i',
+        'ig',
+        'insta',
+        'instagram'
+      ],
+      key: 'KeyI',
+      icon: 'instagram',
+      url: 'https://instagram.com',
+      normalisedURL: 'instagram.com',
+      commands: {
+        go: {
+          template: '{@}/{$}',
+          description: 'go to user'
+        }
+      },
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'radial',
+        angle: 'circle at 30% 107%',
+        colors: ['#fdf497', '#fdf497', '#fd5949', '#d6249f', '#285aeb'],
+        stops: [0, 5, 45, 60, 90]
+      },
+      textColor: '#e8e8e8',
+      pinned: true
+    },
+
+    
+    {
+      category: 'Programming',
+      name: 'GitHub',
+      icon: 'github',
+      url: 'https://github.com',
+      normalisedURL: 'github.com',
+      triggers: [
+        'g',
+        'git',
+        'github'
+      ],
+      key: 'KeyG',
+      commands: {
+        go: {
+          template: '{@}/{$}',
+          description: 'go to user'
+        },
+        search: {
+          template: '{@}/search?q={$}'
+        }
+      },
+      bgColor: {
+        type: 'solid',
+        color: '#171515'
+      },
+      textColor: '#e8e8e8',
+      pinned: true
+    },
+
     {
       category: 'Social',
       name: 'Reddit',
@@ -159,35 +240,8 @@ window.CONFIG = {
       },
       textColor: '#fff',
       pinned: true
-    },
-    {
-      category: 'Programming',
-      name: 'GitHub',
-      icon: 'github',
-      url: 'https://github.com',
-      normalisedURL: 'github.com',
-      triggers: [
-        'g',
-        'git',
-        'github'
-      ],
-      key: 'KeyG',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to user'
-        },
-        search: {
-          template: '{@}/search?q={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#171515'
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
+    },    
+
     {
       category: 'Programming',
       name: 'StackOverflow',
@@ -221,81 +275,39 @@ window.CONFIG = {
       pinned: true
     },
     
+    
+    
+    
     {
-      category: 'Other',
-      name: 'Translate',
-      icon: 'translate',
-      url: 'https://translate.google.com',
-      normalisedURL: 'translate.google.com',
+      category: 'Communication',
+      name: 'Telegram',
+      icon: 'telegram',
+      url: 'http://t.me',
+      normalisedURL: 't.me',
       triggers: [
-        't',
-        'translate'
+        
+        'tm',
+        'tg',
+        'teleg',
+        'telega',
+        'telegram'
       ],
-      key: 'KeyT',
-      commands: {
-        search: {
-          template: '{@}/?text={$}',
-          description: 'translate text'
-        }
-      },
-      bgColor: {
-        type: 'gradient',
-        gradientType: 'linear',
-        angle: 45,
-        colors: ['#508bed', '#4654b4']
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-    {
-      category: 'Social',
-      name: 'Instagram',
-      triggers: [
-        'i',
-        'ig',
-        'insta',
-        'instagram'
-      ],
-      key: 'KeyI',
-      icon: 'instagram',
-      url: 'https://instagram.com',
-      normalisedURL: 'instagram.com',
+      key: 'KeyM',
       commands: {
         go: {
-          template: '{@}/{$}',
-          description: 'go to user'
+          template: '{@}/{$}'
         }
       },
       bgColor: {
         type: 'gradient',
         gradientType: 'radial',
-        angle: 'circle at 30% 107%',
-        colors: ['#fdf497', '#fdf497', '#fd5949', '#d6249f', '#285aeb'],
-        stops: [0, 5, 45, 60, 90]
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
-    
-    {
-      category: 'Social',
-      name: 'Discord',
-      icon: 'discord',
-      key: 'KeyD',
-      triggers: [
-        'd',
-        'dis',
-        'discord'
-      ],
-      url: 'https://discord.com/app',
-      normalisedURL: 'discord.com',
-      bgColor: {
-        type: 'solid',
-        color: '#5460e6'
+        colors: ['#29aaed', '#25a4e2'],
+        stops: [40, 100]
       },
       textColor: '#fff',
       pinned: true
     },
+
     {
       category: 'Social',
       name: 'Twitch',

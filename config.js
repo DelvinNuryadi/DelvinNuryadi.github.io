@@ -56,12 +56,13 @@ window.CONFIG = {
       url: 'https://music.youtube.com/',
       normalisedURL: 'music.youtube.com',
       triggers: [
-        'music',
+        'm',
         'yt',
         'ytm',
         'ytmusic',
         'youtubemusic'
       ],
+      key: 'KeyY',
       commands: {
         search: {
           template: '{@}/search/{$}'
@@ -85,7 +86,7 @@ window.CONFIG = {
       url: 'http://t.me',
       normalisedURL: 't.me',
       triggers: [
-        'm',
+        
         'tm',
         'tg',
         'teleg',

@@ -50,6 +50,35 @@ window.CONFIG = {
       pinned: true
     },
     {
+      category: 'Music',
+      name: 'yt music',
+      icon: 'ytmusic',
+      url: 'https://music.youtube.com/',
+      normalisedURL: 'music.youtube.com',
+      triggers: [
+        'music',
+        'yt',
+        'ytm',
+        'ytmusic',
+        'youtubemusic'
+      ],
+      commands: {
+        search: {
+          template: '{@}/search/{$}'
+        },
+        go: {
+          template: '{@}/track/{$}',
+          description: 'go to track'
+        }
+      },
+      bgColor: {
+        type: 'solid',
+        color: '#f44336'
+      },
+      textColor: '#fff',
+      pinned: true
+    },
+    {
       category: 'Communication',
       name: 'Telegram',
       icon: 'telegram',
@@ -246,35 +275,7 @@ window.CONFIG = {
       textColor: '#e8e8e8',
       pinned: true
     },
-    {
-      category: 'Music',
-      name: 'spotify',
-      icon: 'spotify',
-      url: 'https://open.spotify.com',
-      normalisedURL: 'spotify.com',
-      triggers: [
-        'music',
-        'sp',
-        'sfy',
-        'spo',
-        'spotify'
-      ],
-      commands: {
-        search: {
-          template: '{@}/search/{$}'
-        },
-        go: {
-          template: '{@}/track/{$}',
-          description: 'go to track'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#1ccc5b'
-      },
-      textColor: '#000',
-      pinned: true
-    },
+    
     {
       category: 'Social',
       name: 'Discord',

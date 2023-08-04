@@ -108,27 +108,6 @@ window.CONFIG = {
     },
 
     {
-      category: 'Social',
-      name: 'Discord',
-      icon: 'discord',
-      key: 'KeyD',
-      triggers: [
-        'd',
-        'dis',
-        'discord'
-      ],
-      url: 'https://discord.com/app',
-      normalisedURL: 'discord.com',
-      bgColor: {
-        type: 'solid',
-        color: '#5460e6'
-      },
-      textColor: '#fff',
-      pinned: true
-    },
-
-    
-    {
       category: 'Communication',
       name: 'WhatsApp',
       icon: 'whatsApp',
@@ -150,6 +129,107 @@ window.CONFIG = {
       textColor: '#fff',
       pinned: true
     },
+
+    {
+      category: 'Conference',
+      name: 'Google Meet',
+      triggers: [
+        'gm',
+        'meet',
+        'gmeet',
+        'google meet',
+      ],
+      icon: 'gmeet',
+      // key: 'KeyA',
+      url: 'https://meet.google.com/',
+      normalisedURL: 'meet.google.com',
+      bgColor: {
+        type: 'gradient',
+        gradientType: 'linear',
+        colors: ['#03fc6f', '#7ffacd'],
+        stops: [0, 80]
+      },
+      textColor: '#fff',
+      pinned: true
+    },
+
+    {
+      category: 'Programming',
+      name: 'GitHub',
+      icon: 'github',
+      url: 'https://github.com',
+      normalisedURL: 'github.com',
+      triggers: [
+        'g',
+        'git',
+        'github'
+      ],
+      key: 'KeyG',
+      commands: {
+        go: {
+          template: '{@}/{$}',
+          description: 'go to user'
+        },
+        search: {
+          template: '{@}/search?q={$}'
+        }
+      },
+      bgColor: {
+        type: 'solid',
+        color: '#171515'
+      },
+      textColor: '#e8e8e8',
+      pinned: true
+    },
+
+    {
+      category: 'Other',
+      name: 'Quora',
+      icon: 'quora',
+      url: 'https://id.quora.com/',
+      normalisedURL: 'id.quora.com',
+      triggers: [
+        'qu',
+        'quora',
+      ],
+      commands: {
+        search: {
+          template: '{@}/search?term={$}'
+        },
+        go: {
+          template: '{@}/{$}'
+        }
+      },
+      bgColor: {
+        type: 'solid',
+        color: '#ffffff'
+      },
+      textColor: '#000',
+      pinned: true
+    },
+
+    {
+      category: 'Social',
+      name: 'Discord',
+      icon: 'discord',
+      key: 'KeyD',
+      triggers: [
+        'd',
+        'dis',
+        'discord'
+      ],
+      url: 'https://discord.com/app',
+      normalisedURL: 'discord.com',
+      bgColor: {
+        type: 'solid',
+        color: '#5460e6'
+      },
+      textColor: '#fff',
+      pinned: true
+    },
+
+    
+
 
     {
       category: 'Social',
@@ -182,34 +262,7 @@ window.CONFIG = {
     },
 
     
-    {
-      category: 'Programming',
-      name: 'GitHub',
-      icon: 'github',
-      url: 'https://github.com',
-      normalisedURL: 'github.com',
-      triggers: [
-        'g',
-        'git',
-        'github'
-      ],
-      key: 'KeyG',
-      commands: {
-        go: {
-          template: '{@}/{$}',
-          description: 'go to user'
-        },
-        search: {
-          template: '{@}/search?q={$}'
-        }
-      },
-      bgColor: {
-        type: 'solid',
-        color: '#171515'
-      },
-      textColor: '#e8e8e8',
-      pinned: true
-    },
+
 
     {
       category: 'Social',

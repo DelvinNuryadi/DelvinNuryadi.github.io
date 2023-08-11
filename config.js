@@ -133,6 +133,7 @@ window.CONFIG = {
     {
       category: 'Conference',
       name: 'Google Meet',
+      key: 'KeyM',
       triggers: [
         'gm',
         'meet',
@@ -183,6 +184,35 @@ window.CONFIG = {
     },
 
     {
+      name: 'Google Classroom', // macros name
+      category: 'Education', // category of the macros
+      url: 'https://classroom.google.com/', // full macros URL
+      normalisedURL: 'classroom.google.com', // normalised URL (secondLevelDomain + '.' + firstLevelDomain)
+      icon: 'gclass',
+      key: 'KeyC',
+      triggers: [ 
+        'gc',
+        'gclass',
+        'classroom',
+        'google classroom',
+       ], // list of triggers
+      commands: {
+        search: {
+          template: '{@}/search?term={$}'
+        },
+        go: {
+          template: '{@}/{$}'
+        }
+      },
+      bgColor: {
+        type: 'solid',
+        color: '#6fd6b1',
+      }, // background color
+      textColor: '#000', // text color
+      pinned: true, // is the macros pinned in the Macros Menu
+    },
+
+    {
       category: 'Other',
       name: 'Quora',
       icon: 'quora',
@@ -207,6 +237,8 @@ window.CONFIG = {
       textColor: '#000',
       pinned: true
     },
+
+
 
     {
       category: 'Social',

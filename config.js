@@ -532,7 +532,6 @@ window.CONFIG = {
         'gd',
         'drive',
         'gdrive',
-        'google',
       ],
       icon: 'gdrive',
       url: 'https://drive.google.com',

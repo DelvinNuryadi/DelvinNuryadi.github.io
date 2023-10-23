@@ -89,7 +89,7 @@ window.CONFIG = {
       triggers: [
         'dee',
         'deep',
-        'deepl'
+        'deepl',
       ],
       key: 'KeyD',
       commands: {

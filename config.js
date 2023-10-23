@@ -84,13 +84,14 @@ window.CONFIG = {
       category: 'Other',
       name: 'Translate',
       icon: 'translate',
-      url: 'https://translate.google.com',
-      normalisedURL: 'translate.google.com',
+      url: 'https://www.deepl.com/en/translator',
+      normalisedURL: 'www.deepl.com',
       triggers: [
-        't',
-        'translate'
+        'dee',
+        'deep',
+        'deepl
       ],
-      key: 'KeyT',
+      key: 'KeyD',
       commands: {
         search: {
           template: '{@}/?text={$}',

@@ -368,8 +368,8 @@ window.CONFIG = {
       category: 'Communication',
       name: 'Telegram',
       icon: 'telegram',
-      url: 'http://t.me',
-      normalisedURL: 't.me',
+      url: 'https://web.telegram.org/',
+      normalisedURL: 'web.telegram.org',
       triggers: [
         
         'tm',
